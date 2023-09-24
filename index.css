@@ -1,0 +1,14 @@
+@import url('variables/sizes.css');
+@import url('variables/colors.css');
+@import url('variables/borders.css');
+@import url('variables/fonts.css');
+@import url('styles/normalize.css');
+@import url('styles/common.css');
+@import url('styles/header.css');
+@import url('styles/navigation-pseudo-classes.css');
+@import url('styles/navigation.css');
+@import url('styles/navigation-media-queries.css');
+@import url('styles/main.css');
+@import url('styles/section.css');
+@import url('styles/section-media-queries.css');
+@import url('styles/footer.css');
