@@ -1,0 +1,114 @@
+li:hover {
+    cursor: pointer;
+}
+
+.container > a:first-child {
+    margin-right: 15px;
+}
+
+.logo:hover, 
+li:hover > a {
+    color: var(--active-link-color);
+}
+
+input:focus {
+    border-color: var(--focused-input-border-color);
+    outline: 0;
+    box-shadow: inset 0 1px 1px var(--inside-input-box-shadow-color), 0 0 8px var(--outside-input-box-shadow-color);
+}
+
+button:hover {
+    color: var(--hovered-button-font-color);
+    background-color: var(--hovered-button-background-color);
+    border-color: var(--hovered-button-border-color);
+}
+
+.dropdown-list:hover {
+    position: relative;
+}
+
+.nested-list > li:hover {
+    background-color: var(--hovered-nested-list-item-background-color);
+}
+
+.nested-list > li:hover > a {
+    color: var(--nested-list-item-font-color);
+}
+
+.dropdown-list:hover .nested-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: block;
+}
+
+#hamburger-menu-button:checked + nav > ul > .dropdown-list:hover .nested-list,
+#hamburger-menu-button:checked + nav > ul > .dropdown-list:focus .nested-list {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    position: static;
+}
+
+#hamburger-menu-button:checked + nav > ul > .dropdown-list:hover {
+    height: var(--hamburger-menu-drop-down-list-height);
+}
+
+#hamburger-menu-button:checked + nav > ul > .dropdown-list:hover .nested-list > li:hover {
+    background-color: transparent;
+}
+
+#hamburger-menu-button:checked + nav > ul > .dropdown-list:hover .nested-list > li:hover > a {
+    color: var(--active-link-color);
+}
+
+#hamburger-menu:hover {
+    background-color: var(--hovered-hamburger-menu-label-background-color);
+    cursor: pointer;
+}
+
+#hamburger-menu-button:checked + nav {
+    width: var(--header-width);
+    position: absolute;
+    top: 100%;
+    padding-bottom: 5px;
+    margin-right: 15px;
+}
+
+#hamburger-menu-button:checked + nav > ul {
+    padding-top: 5px;
+    border-top: var(--navigation-border-width) var(--navigation-border-style) var(--navigation-border-color);
+    box-shadow: inset 0 1px 0 var(--inside-navigation-box-shadow-color), 0 1px 0 var(--outside-navigation-box-shadow-color);
+}
+
+#hamburger-menu-button:checked + nav,
+#hamburger-menu-button:checked + nav > ul {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--header-background-color);
+}
+
+#hamburger-menu-button:checked + nav > ul > li {
+    text-align: left;
+    height: 25px;
+}
+
+#hamburger-menu-button:checked + nav > form {
+    margin-left: 0;
+    height: var(--hamburger-menu-form-height);
+    border-top: var(--form-border-width) var(--form-border-style) var(--form-border-color);
+    border-bottom: var(--form-border-width) var(--form-border-style) var(--form-border-color);
+    box-shadow: inset 0 1px 0 var(--inside-navigation-box-shadow-color), 0 1px 0 var(--outside-navigation-box-shadow-color);
+}
+
+#hamburger-menu-button:checked + nav > form > fieldset {
+    display: flex;
+    height: var(--hamburger-menu-form-height);
+    padding: 5px 15px;
+    flex-direction: column;
+}
+
+#hamburger-menu-button:checked + nav > form > fieldset > input {
+    margin-bottom: 5px;
+    width: 95%;
+}

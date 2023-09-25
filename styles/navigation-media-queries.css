@@ -1,0 +1,107 @@
+@media only screen and (max-width: 800px) {
+    nav,
+    nav > ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    #hamburger-menu {
+        display: block;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .container > label {
+        margin-right: 20px;
+    }
+
+    .container > a > img {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (min-width: 801px) {
+    nav,
+    #hamburger-menu-button:checked + nav {
+        width: 693px;
+    }
+
+    #hamburger-menu-button:checked + nav {
+        top: 0;
+        position: initial;
+        overflow: visible;
+    }
+
+    #hamburger-menu-button:checked + nav,
+    #hamburger-menu-button:checked + nav > ul {
+        flex-direction: row;
+        padding: 0;
+    }
+
+    #hamburger-menu-button:checked + nav > ul > li {
+        text-align: center;
+        height: var(--navigation-list-item-height);
+    }
+
+    #hamburger-menu-button:checked + nav > form > fieldset {
+        flex-direction: row;
+        padding: 0;
+        height: var(--form-height);
+    }
+
+    #hamburger-menu-button:checked + nav > form {
+        margin-left: auto;
+        display: block;
+        margin-top: 8px;
+    }
+    
+    #hamburger-menu-button:checked + nav > form > fieldset > input {
+        margin-left: auto;
+        margin-right: 5px;
+        width: var(--input-width);
+    }
+
+    #hamburger-menu-button:checked + nav > form,
+    #hamburger-menu-button:checked + nav > ul {
+        border: 0;
+        box-shadow: none;
+    }
+    
+    #hamburger-menu-button:checked + nav > ul > .dropdown-list:hover .nested-list {
+        position: absolute;
+        top: var(--header-height);
+        left: 0;
+        background-color: white;
+        width: var(--nested-list-width);
+        padding: 6px 2px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+
+    #hamburger-menu-button:checked + nav > ul > .dropdown-list:hover .nested-list > li:hover {
+        background-color: var(--hovered-nested-list-item-background-color);
+    }
+    
+    #hamburger-menu-button:checked + nav > ul > .dropdown-list:hover .nested-list > li:hover > a {
+        color: var(--nested-list-item-font-color);
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    nav,
+    #hamburger-menu-button:checked + nav {
+        width: 913px;
+        overflow: visible;
+    }
+}
+
+@media only screen and (min-width: 1350px) {
+    nav,
+    #hamburger-menu-button:checked + nav {
+        width: 1113px;
+        overflow: visible;
+    }
+}
