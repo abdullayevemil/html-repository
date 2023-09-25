@@ -1,0 +1,12 @@
+header {
+    position: sticky;
+    top: 0;
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--header-background-color);
+    border-color: var(--header-border-color);
+    font-size: var(--header-font-size);
+    height: var(--header-height);
+    width: var(--header-width);
+}
