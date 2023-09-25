@@ -4,13 +4,6 @@ section {
     grid-area: section;
 }
 
-section:first-of-type {
-    background-color: var(--first-section-background-color);
-    color: var(--first-section-font-color);
-    padding: 48px 0 63px;
-    margin-bottom: 30px;
-}
-
 h1 {
     white-space: normal;
     margin-top: 0px;
@@ -32,10 +25,6 @@ p {
 
 article > button {
   padding: 0 5px;
-}
-
-article:first-child > button:last-child {
-  width: var(--first-article-button-width);
 }
 
 .rounded-images-place > article {
@@ -64,12 +53,6 @@ section > button {
     font-family: inherit;
 }
 
-section > button:hover {
-    color: var(--hovered-section-button-font-color);
-    background-color: var(--hovered-section-button-background-color);
-    border-color: var(-hovered-section-button-border-color);
-}
-
 article > a > img {
     height: var(--image-height);
     width: var(--image-width);
@@ -96,11 +79,6 @@ h3 > a {
     box-sizing: border-box;
 }
 
-h3 > a:hover {
-    color: var(--section-hovered-link-color);
-    text-decoration:underline
-}
-
 .images {
     display: flex;
     flex-direction: column;
@@ -114,14 +92,6 @@ h1,
 h2,
 h3 {
     margin: 20px 0 10px;
-}
-
-section:nth-child(2) > p {
-    margin-left: auto;
-    margin-right: auto;
-    white-space: normal;
-    max-width: var(--description-max-width);
-    padding: 0 10px;
 }
 
 article {
@@ -140,10 +110,6 @@ article {
   color: var(--rounded-images-section-font-color);
   display: flex;
   justify-content: center;
-}
-
-section:nth-child(2) > h2 {
-  font-size: var(--second-level-header-font-size);
 }
 
 h3 > a {
