@@ -109,6 +109,7 @@ article {
   background-color: var(--rounded-images-section-backgound-color);
   color: var(--rounded-images-section-font-color);
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 

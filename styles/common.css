@@ -9,7 +9,6 @@ body {
     font-size: var(--common-font-size);
     overflow-x: hidden;
     color: var(--main-font-color);
-    min-width: 500px;
 }
 
 a {
