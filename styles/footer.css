@@ -1,0 +1,23 @@
+footer {
+    grid-area: footer;
+    text-align: center;
+    font-size: var(--footer-font-size);
+    text-align: center;
+    margin: 30px 0;
+}
+
+footer > p {
+    box-sizing: border-box;
+    font-size: inherit;
+}
+
+footer > p > a {
+    color: var(--footer-active-link-color);
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+footer > p > a:hover {
+    color: var(--footer-hovered-link-color);
+    text-decoration:underline
+}
