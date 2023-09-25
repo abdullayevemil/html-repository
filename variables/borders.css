@@ -1,0 +1,18 @@
+:root {
+    --input-border-width: 1px;
+    --input-border-style: solid;
+    --input-border-radius: 4px;
+    --button-border-width: 1px;
+    --button-border-style: solid;
+    --button-border-radius: 4px;
+    --hamburger-menu-label-border-width: 1px;
+    --hamburger-menu-label-border-style: solid;
+    --hamburger-menu-label-border-radius: 4px;
+    --navigation-border-width: 1px;
+    --navigation-border-style: solid;
+    --form-border-width: 1px;
+    --form-border-style: solid;
+    --nested-list-border-radius: 4px;
+    --image-border-radius: 6px;
+    --section-button-border-radius: 4px;
+}

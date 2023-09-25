@@ -1,0 +1,27 @@
+:root {
+    --navigation-list-item-width: 67px;
+    --navigation-list-item-height: 30px;
+    --form-height: 32px;
+    --input-width: 198px;
+    --search-button-width: 70px;
+    --search-button-height: 34px;
+    --hamburger-menu-label-width: 44px;
+    --hamburger-menu-label-height: 34px;
+    --logo-width: 25px;
+    --nested-list-width: 160px;
+    --nested-list-item-height: 26px;
+    --header-height: 50px;
+    --header-width: 100%;
+    --hamburger-menu-drop-down-list-height: 170px;
+    --hamburger-menu-form-height: 84px;
+    --rounded-image-width: 100px;
+    --description-max-width: 1146px;
+    --max-content-width: 1170px;
+    --image-height: 300px;
+    --image-width: 300px;
+    --section-button-width: 105px;
+    --article-width: 360px;
+    --first-article-button-width: 100px;
+    --form-line-height: 48px;
+    --logo-line-height: 50px;
+}
