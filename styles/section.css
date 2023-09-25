@@ -1,0 +1,168 @@
+section {
+    word-wrap: break-word;
+    text-align: center;
+    grid-area: section;
+}
+
+section:first-of-type {
+    background-color: var(--first-section-background-color);
+    color: var(--first-section-font-color);
+    padding: 48px 0 63px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    white-space: normal;
+    margin-top: 0px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-size: var(--first-level-header-font-size);
+}
+
+p {
+    white-space: normal;
+    font-size: var(--common-font-size);
+    font-weight: 200;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+article > button {
+  padding: 0 5px;
+}
+
+article:first-child > button:last-child {
+  width: var(--first-article-button-width);
+}
+
+.rounded-images-place > article {
+  margin: 50px 0;
+}
+
+article {
+    display: inline-block;
+    margin-bottom: 25px;
+    width: var(--article-width);
+    padding: 12px;
+}
+
+section > button {
+    color: var(--hovered-section-button-font-color);
+    background-color: var(--section-button-background-color);
+    border-color: var(--section-button-border-color);
+    padding: 6px 12px;
+    font-weight: 400;
+    border-radius: var(--section-button-border-radius);
+    display: inline-block;
+    white-space: nowrap;
+    box-sizing: border-box;
+    width: var(--section-button-width);
+    font-size: inherit;
+    font-family: inherit;
+}
+
+section > button:hover {
+    color: var(--hovered-section-button-font-color);
+    background-color: var(--hovered-section-button-background-color);
+    border-color: var(-hovered-section-button-border-color);
+}
+
+article > a > img {
+    height: var(--image-height);
+    width: var(--image-width);
+    border-radius: var(--image-border-radius);
+    border: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+section > h2,
+h3 {
+    color: var(--square-images-section-header-font-color);
+    font-weight: 400;
+}
+
+section > h2 > span {
+    color: var(--main-font-color);
+    font-size: 65%;
+}
+
+h3 > a {
+    color: var(--section-active-link-color);
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+h3 > a:hover {
+    color: var(--section-hovered-link-color);
+    text-decoration:underline
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    max-width: var(--max-content-width);
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, 
+h2,
+h3 {
+    margin: 20px 0 10px;
+}
+
+section:nth-child(2) > p {
+    margin-left: auto;
+    margin-right: auto;
+    white-space: normal;
+    max-width: var(--description-max-width);
+    padding: 0 10px;
+}
+
+article {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
+.rounded-image {
+  border-radius: 50%;
+  width: var(--rounded-image-width);
+}
+
+.rounded-images-place {
+  background-color: var(--rounded-images-section-backgound-color);
+  color: var(--rounded-images-section-font-color);
+  display: flex;
+  justify-content: center;
+}
+
+section:nth-child(2) > h2 {
+  font-size: var(--second-level-header-font-size);
+}
+
+h3 > a {
+  margin: 20px 0 10px;
+  font-size: inherit;
+}
+
+article > a > img {
+  max-width: 100%;
+}
+
+article > a {
+  max-width: 95%;
+}
+
+article {
+  width: 100%;
+}
+
+h3 {
+    font-size: var(--third-level-header-font-size);
+}
